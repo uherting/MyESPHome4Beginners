@@ -1,5 +1,5 @@
 # ########################################################################
-# simple configuration
+# simple configuration wit a few more sensors
 # ########################################################################
 esphome:
   name: esp32-hello-world-01
@@ -38,3 +38,15 @@ switch:
     name: "Living Room Dehumidifier"
     pin: GPIO5
 
+# ########################################################################
+# New features
+# ########################################################################
+binary_sensor:
+  - platform: gpio
+    name: "Living Room Window"
+    pin:
+      number: GPIO0
+      inverted: true
+      mode:
+        input: true
+        pullup: true    

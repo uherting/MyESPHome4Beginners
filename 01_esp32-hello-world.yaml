@@ -33,20 +33,11 @@ wifi:
 
 captive_portal:
 
+# ------------------------------------------------------------------------
+# a simple switch connected to the microcontroller
+# ------------------------------------------------------------------------
 switch:
   - platform: gpio
     name: "Living Room Dehumidifier"
     pin: GPIO5
 
-# ########################################################################
-# New features
-# ########################################################################
-binary_sensor:
-  - platform: gpio
-    name: "Living Room Window"
-    pin:
-      number: GPIO0
-      inverted: true
-      mode:
-        input: true
-        pullup: true    

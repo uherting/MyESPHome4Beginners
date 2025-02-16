@@ -27,4 +27,8 @@ wifi:
     password: "eAI3e8MvZr2n"
 
 captive_portal:
-    
+
+switch:
+  - platform: gpio
+    name: "Living Room Dehumidifier"
+    pin: GPIO5
